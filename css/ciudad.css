@@ -1,0 +1,1555 @@
+/* ============================================================================================================================ */
+/* common CSS code for the project */
+/* ============================================================================================================================ */
+
+/* set padding and margin to 0 */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Defining the font */
+@font-face {
+    font-family: beyond_the_mountainsregular;
+    src: url(../font/beyond_the_mountains.ttf);
+  }
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../font/OpenSans-Regular.ttf);
+  }
+
+body{
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.667;
+    /* background-color: black; */
+}
+
+header{
+    padding-top: 25px;
+    overflow: hidden;
+    min-height: 125px;
+    background-color: rgba(0,0,0,0.65);
+}
+
+h1, h2, h3 {
+    font-family: beyond_the_mountainsregular;
+}
+
+
+/* Commented due to lack of text visibility */
+
+/* p{
+    color: #555555;
+} */
+
+footer{
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+/* commented to make responsive */
+/* .wrapper{
+    width: 80%;
+    margin: auto;
+} */
+
+/* zigzag triangle */
+
+
+.zigzag-triangle{
+    background: url(../images/triangle_bg_black.png);
+    background-repeat: repeat-x;
+    /* position: absolute; */
+    z-index: 2;
+    height: 18px;
+    /* width: 80%; */
+    opacity: 0.66;
+}
+
+.zigzag-triangle2{
+    background: url(../images/triangle_bg_black.png);
+    /* position: absolute;
+    bottom: 30%; */
+    z-index: 2;
+    transform: rotate(180deg);
+    margin-top: -18px;
+    background-repeat: repeat-x;
+    height: 19px;
+    /* width: 80%; */
+    opacity: 1;
+}
+
+.zigzag-triangle3{
+    background: url(../images/triangle_bg_black.png);
+    z-index: 2;
+    /* margin-top: -20px; */
+    background-repeat: repeat-x;
+    height: 18px;
+    /* width: 80%; */
+    opacity: 1;
+}
+
+.zigzag-triangle4{
+    background: url(../images/triangle_bg_black.png);
+    /* position: absolute; */
+    /* bottom: 10%; */
+    z-index: 2;
+    transform: rotate(180deg);
+    margin-top: -18px;
+    background-repeat: repeat-x;
+    height: 19px;
+    /* width: 80%; */
+    opacity: 1;
+    
+}
+
+.zigzag-triangle5{
+    background: url(../images/triangle_bg_black.png);
+    /* position: absolute; */
+    z-index: 2;
+    transform: rotate(180deg);
+    margin-top: -18px;
+    background-repeat: repeat-x;
+    height: 19px;
+    /* width: 80%; */
+    opacity: 1;
+}
+
+
+.nav-links{
+    list-style-type: none;
+}
+
+.nav-links li{
+    display: inline;
+    padding: 0px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    padding: 0px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+header #logo{
+    float: left;
+}
+
+header nav{
+    float: right;
+    margin-top: 35px;
+}
+
+.nav-links .current a{
+    color: #EF0032;
+}
+
+.nav-links li a:hover{
+    color: #EF0032;
+}
+
+#logo img{
+    width: 150px;
+    height: auto;
+}
+
+.burger{
+    margin: 40px 10px 0px 0px;
+    display: none;
+    float: right;
+    cursor: pointer;
+
+}
+
+.burger div{
+    height: 3px;
+    margin: 5px;
+    width: 25px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+.nav-links hr{
+    display: none;
+    }
+
+.menu-click-btn{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    }
+/* ============================================================================================================================ */
+/* Home Page CSS */
+/* ============================================================================================================================ */
+
+.home-header-container{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../images/hamburguesa2.jpg);
+    min-height: 80vh;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    /* background-size: 100% 100vh; */
+    background-repeat: no-repeat;
+}
+
+.home-message-container{
+    width: 80%;
+    text-align: center;
+    color: white;
+    /* position: absolute; */
+    /* top: 40%; */
+    margin: 10% auto;
+
+}
+
+/* ============================================================================================================================ */
+/* AboutUs Page CSS */
+/* ============================================================================================================================ */
+
+.aboutus-header-container{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../images/hamburguesa4.jpg);
+    min-height: 80vh;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    /* background-size: 100% 100vh; */
+    background-repeat: no-repeat;
+}
+
+.aboutus-message-container{
+    width: 80%;
+    text-align: center;
+    color: white;
+    /* position: absolute; */
+    /* top: 40%; */
+    margin: 10% auto;
+}
+/* ============================================================================================================================ */
+/* Menu Page CSS */
+/* ============================================================================================================================ */
+
+.menu-header-container{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../images/hamburguesa5.jpg);
+    min-height: 80vh;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    /* background-size: 100% 150vh; */
+    background-repeat: no-repeat;
+}
+
+.menu-message-container{
+    width: 80%;
+    text-align: center;
+    color: white;
+    /* position: absolute;
+    top: 30%; */
+    margin: 10% auto;
+}
+/* ============================================================================================================================ */
+/* Contact Page CSS */
+/* ============================================================================================================================ */
+
+.contact-header-container{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../images/hamburguesa7.jpg);
+    min-height: 80vh;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    /* background-size: 100% 160vh; */
+    background-repeat: no-repeat;
+}
+
+.contact-message-container{
+    width: 80%;
+    text-align: center;
+    color: white;
+    /* position: absolute;
+    top: 30%; */
+    margin: 10% auto;
+}
+
+.contactform-container{
+    background-color: black;
+    min-height: 80vh;
+    width: 100%;
+    display: grid;
+    color: white;
+}
+
+.contactform-content{
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.contactform-form{
+    max-width: 70%;
+    margin: auto;
+}
+
+.contact-add-padding-top{
+    margin:5px 0px;
+}
+
+
+.contactform-content input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    }
+
+.contactform-content textarea {
+    max-width:  100%;
+    min-width:  100%;
+    max-height: 200px;
+    min-height: 120px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.contactform-result-container{
+    background-color: black;
+    min-height: 80vh;
+    width: 100%;
+    display: block;
+    color: white;
+    text-align: center;
+
+}
+
+.contactform-result-display{
+    background-color: gray;
+    max-width: 70%;
+    margin: auto;
+}
+
+.individual-contact-post{
+    padding: 20px 20px 10px 20px;
+    text-align: left;
+}
+
+/* ============================================================================================================================ */
+/* Cart Page CSS */
+/* ============================================================================================================================ */
+
+.cart-header-container{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) , url(../images/hamburguesa5.jpg);
+    min-height: 80vh;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    /* background-size: 100% 100vh; */
+    background-repeat: no-repeat;
+}
+
+.cart-message-container{
+    width: 80%;
+    text-align: center;
+    color: white;
+    /* position: absolute; */
+    /* top: 30%; */
+    margin: 10% auto;
+
+}
+
+/* ============================================================================================================================ */
+/* Payment Page CSS */
+/* ============================================================================================================================ */
+
+.payment-header-container{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) , url(../images/hamburguesa5.jpg);
+    min-height: 80vh;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    /* background-size: 100% 100vh; */
+    background-repeat: no-repeat;
+}
+.payment-message-container{
+    width: 100%;
+    text-align: center;
+    color: white;
+    /* position: absolute; */
+    /* top: 30%; */
+    margin: 10% auto;
+
+}
+
+/* ============================================================================================================================ */
+/* ============================================================================================================================ */
+
+
+.button-class{
+    background-color: #EF0031;
+    color: #fff;
+    height: 50px;
+    width: auto;
+    padding: 0 25px;
+    border: none;
+    border-bottom: 1.5px solid #ffffff;
+}
+
+/* .home-offer-button { 
+    background: url(../images/offer-tag.png);
+    position: absolute;
+    transform: scale(0.5);
+    margin-left: 20px;
+    color: #ffffff;
+    padding: 16px 1px 23px 145px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;    
+    cursor: pointer; 
+  } 
+
+  .home-offer2-button {
+    background: url(../images/offer-green-tag.png);
+    position: absolute;
+    transform: scale(0.43);
+    margin-left: -11px;
+    background-color:#EF0031;
+    color: #ffffff;
+    padding: 16px 1px 29px 239px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;    
+    cursor: pointer; 
+  }
+
+.home-offer3-button {
+    background: url(../images/offer-white-tag.png);
+    position: absolute;
+    transform: scale(0.47);
+    margin-left: -1px;
+    background-color:#EF0031;
+    color: #ffffff;
+    padding: 16px 1px 20px 212px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;    
+    cursor: pointer; 
+  } */
+
+.button {
+    border-color: none;
+}
+
+
+.best-seller-container{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) , url(../images/hamburguesa1.jpg);
+    min-height: 100vh;
+    width: 100%;
+    display: inline-block;
+    /* background-position: center;
+    background-size: 100% 100vh; */
+    
+    background-position: 0 0;
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+    display: grid;
+
+}
+
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+
+.container-flex{
+    display: flex;
+
+}
+.history-container{
+    background: url(../images/story1.png),url(../images/story2.png);
+    background-color: black;
+    min-height: 40vh;
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    background-position: left, right;
+    background-position-y: bottom;
+    /* margin-top: -7px; */
+    width: 100%;
+    /* display: inline-block; */
+    display: grid;
+}
+
+.history-content{
+    color: white;
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 0;
+    padding: 15px 0px;
+}
+
+.paragraph-container{
+    margin-top: 30px;
+}
+.burger-img{
+    height: 30px;
+    width: 30px;
+}
+
+
+.best-seller-items{
+    text-align: center;
+    margin: auto;
+    color: white;
+    width: 80%;    
+    margin-bottom: 5%;
+    padding: 15px 0px;
+    margin-top: 10%;
+
+}
+
+
+.footer-container{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(../images/hamburguesa3.jpg);
+    min-height: 75vh;
+    width: 100%;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: grid;
+}
+
+footer .container{
+    max-width: 80%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#footer-logo img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+
+}
+
+.footer-content{
+    margin-bottom: 15px;
+    color: #fff;
+
+}
+
+.footer-key{
+    text-decoration: underline;
+    color: #37B143;
+}
+
+.footer-value{
+    color: #fff;
+}
+
+.fa {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    width: 15px;
+    margin: 0px 5px;
+    padding: 2px 3px;
+    border-radius: 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  
+.fa-linkedin {
+    background: #fff;
+    color: gray;
+  }
+
+.fa-heart{
+    font-size: 20px;
+    color:#fff;
+    padding: 0;
+}
+
+
+
+.align-class{
+    float: left;
+}
+
+/* input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  textarea {
+    max-width:  100%;
+    min-width:  100%;
+    max-height: 100px;
+    min-height: 80px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+  } */
+
+/* .login-container, .register-container{
+    margin: 20px 0px;
+} */
+
+/* .login-button-div, .register-button-div{
+    float: right;
+} */
+
+/* .login-button, .register-button{
+    background-color: #EF0031;
+    color: #fff;
+    margin: 10px auto;
+    height: 50px;
+    width: auto;
+    padding: 0 20px;
+    border: none;
+} */
+
+.cart-button{
+    background-color: #EF0031;
+    color: #fff;
+    margin: 10px auto;
+    height: 50px;
+    width: auto;
+    padding: 0 20px;
+    border: none;
+}
+
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  
+  .hamburger-pic img{
+    width: 60%;
+    height: auto;
+  
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .hamburger-pic {
+    /* border: antiquewhite 1px solid; */
+    height: auto;
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+
+  .burger-order-button{
+    background: none;
+    color: #EF0031;
+    height: 40px;
+    padding: 0px 20px;
+    margin: 10px;
+    border: 1px solid #EF0032;
+    border-radius: 2px;
+  }
+
+  
+.list-menu-container{
+    background-color: black;
+    min-height: 80vh;
+    width: 100%;
+    /* display: grid; */
+    display: inline-block;
+
+}
+
+.list-menu-content{
+    color: white;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    padding: 15px 0px;
+    margin-top: 5%;
+}
+
+
+
+.menu-container{
+    background-color: black;
+    min-height: 80vh;
+    width: 100%;
+    /* display: grid; */
+    display: inline-block;
+
+}
+
+.menu-content{
+    color: white;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    padding: 15px 0px;
+    margin-top: 5%;
+}
+
+.menu-row{
+    display: flex;
+    margin-top: 5%;
+}
+
+.menu-row h2{
+    font-family: OpenSans-Regular;
+    color: #EF0032;
+}
+
+.menu-list-row {
+    display: flex;
+    margin-top: 5%;
+  }
+  
+.menu-list-column {
+    flex: 50%;
+    margin-right: 30px;
+
+  }
+
+.item-row{
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.menu-list-item{
+    /* display: inline-block; */
+    float: left;
+    padding: 5px;
+
+}
+
+.menu-list-name{
+    /* display: inline-block; */
+    float: left;
+    padding: 5px;
+
+}
+
+.menu-list-price{
+    float: right;
+    padding: 5px;
+    /* display: inline-block; */
+}
+.menu-list-price p{
+    color: #EF0032;
+}
+
+.hamburger-icon{
+    width: 80px;
+    height: 60px;
+
+}
+
+.price-tag{
+    color: #EF0032;
+
+}
+
+.home-add-padding-top{
+    margin-top: 20px;
+}
+
+.add-padding-bottom{
+    margin-bottom: 20px;
+}
+
+.red-color{
+    background-color: #EF0032 ;
+    border: #EF0032 1px solid;
+
+}
+
+.nav-list{
+    display: inline-flex;
+   
+}
+
+.nav-list  div{
+    padding: 10px 30px;
+}
+
+
+
+#aboutus-title h3{
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#aboutus-title h1{
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+.aboutus-color-overlay{
+    width: 100%;
+    height: 50%;
+    background: #000;
+    opacity: 0.4;
+    position: absolute;
+}
+
+.client-review-container{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) , url(../images/hamburguesa1.jpg);
+    min-height: 100vh;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.aboutus-container{
+    max-width: 72%;
+    margin: auto;
+}
+
+.somosIbra-container{
+    
+    background-color: black;
+    min-height: 35vh;
+    /* background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left, right;
+    margin-top: -7px;
+    display: inline-block; */
+    width: 100%;
+}
+
+.aboutus-Lastslogan-container{
+    background-color: black;
+    height: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.aboutus-Slogan-content{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 25%;
+    padding-bottom: 50px;
+    width: 53%;
+}
+.somosIbra-content{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.hamburguesa1-img{
+    /* padding-top: 60px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    height: 50vh;
+    width: 60vh; */
+
+    padding: 10px;
+    height: 300px;
+    width: 45%;
+}
+    
+.somosIbra-img-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.hamburguesa2-img{
+    height: 50vh;
+    width: 60vh;
+}
+
+.somosIbra-paragraph-container{
+    margin-top: 50px;
+    max-width: 75%;
+    margin: auto;
+}
+
+.somosIbra-paragraph-one{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.client-one{
+  
+    float: left;
+    width: 25%;
+    color:gray;
+    text-align: left;
+    font-size: small;
+    
+}
+
+.client-review-subject{
+    color: white;
+    font-size: large;
+}
+.reviewer-name{
+    color: #EF0032;
+    font-size: small;
+}
+.client-two{
+    
+    float: left;
+    width: 25%;
+    color:gray;
+    text-align: left;
+    font-size: small;
+    margin: 0px 30px;
+}
+
+.client-three{
+  
+    float: left;
+    width: 25%;
+    color:gray;
+    text-align: left;
+    font-size: small;
+    margin-bottom: 30px;
+}
+
+.somosIbra-paragraph-two{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.aboutus-Buttons{
+    margin-top: 20px;
+
+}
+.aboutus-red-button {
+
+    background-color:#EF0031;
+    color: #ffffff;
+    padding: 15px 16px;
+    text-align: center;
+    text-decoration: none;
+   
+    font-size: 15px;    
+    cursor: pointer;
+    border-style: solid;
+    border-color: #EF0031;
+    border-bottom-color:#ffffff;
+  }
+
+.aboutus-green-button{
+
+    background-color: green;
+    color: white;
+    padding: 15px 26px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;    
+    cursor: pointer;
+    border-style: solid;
+    border-color: green;
+    border-bottom-color: white;
+}
+
+.somosIbra-paragraph-three{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.client-review-title{
+    text-align: center;
+    margin: auto;
+    color: white;
+    /* width: 80%; */
+    margin-top: 30px;
+
+}
+
+.clients{
+    /* padding-left: 180px; */
+    /* margin: auto; */
+    color: white;
+    width: 90%;
+    margin: auto;
+    float: right;
+    
+}
+
+/* .burger-img{
+    height: 40px;
+    width: 40px;
+} */
+/* --------------------------------------Payment and Card container code-------------------------- */
+
+
+
+.payment-container{
+    background-color: black;
+    min-height: 80vh;
+    width: 100%;
+    /* display: grid; */
+    display: inline-block;
+
+}
+
+.payment-content{
+    min-height: 70vh;
+    text-align: center;
+    max-width: 45%;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 5px solid lightgrey;
+    border-radius: 3px;
+    margin: 40px auto;
+}
+.cart-container{
+    background-color: black;
+    min-height: 80vh;
+    width: 100%;
+    /* display: grid; */
+    display: inline-block;
+
+}
+
+.cart-content{
+    min-height: 70vh;
+    text-align: center;
+    max-width: 45%;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 5px solid lightgrey;
+    border-radius: 3px;
+    margin: 40px auto;
+}
+
+.shopping-cart-icon{
+    font-size: 30px;
+}
+.cart-row{
+    display: flex;
+}
+
+.float-left-cart-row{
+    width: 50%;
+}
+.float-right-cart-row{
+    width: 50%;
+}
+
+.add-padding-products{
+    margin: 5px 0px;
+}
+
+
+.payment-div-content{
+text-align: left;
+}
+
+.payment-field{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+
+/* ============================================================================================================================ */
+/* Register and Login modal */
+/* ============================================================================================================================ */
+
+  .register-modal, .login-modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .register-modal-content {
+    margin: 2% auto;
+    width: 500px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    background-color: #ffffff;
+    animation-name: modalopen;
+    animation-duration: 2s;
+  }
+
+  .login-modal-content {
+    margin: 10% auto;
+    width: 500px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    background-color: #ffffff;
+    animation-name: modalopen;
+    animation-duration: 2s;
+  }
+
+  
+  .register-modal-content input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+
+    .login-modal-content input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    }
+
+    .register-modal-content textarea {
+        max-width:  100%;
+        min-width:  100%;
+        max-height: 100px;
+        min-height: 80px;
+        padding: 12px 20px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+  .modal-header h1 {
+    padding-left: 10px;
+    margin: 0;
+  }
+  
+  .modal-header {
+    padding: 20px 15px 5px 15px;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+
+  .modal-footer {
+    padding: 0 20px;
+    text-align: right;
+  }
+
+  .spanning{
+    display: inline;
+}
+
+  .register-close-modal,
+  .login-close-modal {
+    float: right;
+    font-size: 30px;
+    color: black;
+  }
+  
+  .register-close-modal:hover,
+  .register-close-modal:focus,
+  .login-close-modal:hover,
+  .login-close-modal:focus {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  .login-button, .register-button{
+    background-color: #EF0031;
+    color: #fff;
+    margin: 10px auto;
+    height: 50px;
+    width: auto;
+    padding: 0 20px;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+.form-status-div{
+    min-height: 30px;
+    color: red;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+.error-text{
+    color: red;
+    font-size: 12px;
+    text-align: center;
+  }
+
+
+/* ============================================================================================================================ */
+/* Media Queries */
+/* ============================================================================================================================ */
+
+/* css for phones */
+/* ============================================================================================================================ */
+
+@media only screen and (max-width: 480px) {
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+.paragraph-one, .paragraph-two{
+    float: none;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 5px 0;
+
+}
+
+.history-content{
+    max-width: 80%;
+}
+
+.nav-links{
+    position: absolute;
+    top: 100px;
+    /* min-height: 80vh; */
+    right: 0px;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 3;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transform: translateX(100%); */
+    visibility: hidden;
+    width: 100%;
+    transition: transform 0s;
+
+}
+
+.nav-links hr{
+    background-color: white;
+    width: 100%;
+    height: 1px;
+    border: none;
+    display: inline;
+    }
+
+.container-flex{
+    display: block;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.nav-links li{
+    padding: 5px 0px;
+}
+
+.nav-links li a{
+    opacity:  0; 
+}
+
+.burger{
+    display: block;
+}
+
+.hamburguesa1-img{
+    padding: 10px 0px;
+    height: 200px;
+    width: 100%;
+}
+
+ /* Register and Login Modal */
+ .register-modal-content, .login-modal-content{
+    width: 80%;
+}
+#logo img{
+    width: 100px;
+}
+#footer-logo img{
+    width: 100px;
+
+}
+}
+
+
+/* css for tablets */
+/* ============================================================================================================================ */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+.paragraph-one, .paragraph-two{
+    float: none;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 5px 0;
+
+}
+
+.history-content{
+    max-width: 90%;
+}
+
+.nav-links{
+    position: absolute;
+    top: 100px;
+    /* min-height: 80vh; */
+    right: 0px;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 3;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transform: translateX(100%); */
+    visibility: hidden;
+    width: 100%;
+    transition: transform 0s;
+
+}
+
+.nav-links hr{
+    background-color: white;
+    width: 100%;
+    height: 1px;
+    border: none;
+    display: inline;
+    }
+
+.container-flex{
+    display: block;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.nav-links li{
+    padding: 5px 0px;
+}
+
+.nav-links li a{
+    opacity:  0; 
+}
+
+.burger{
+    display: block;
+}
+
+
+.hamburguesa1-img{
+    padding: 10px 0px;
+    height: 300px;
+    width: 100%;
+}
+ /* Register and Login Modal */
+.register-modal-content, .login-modal-content{
+    width: 80%;
+}#footer-logo img{
+    width: 150px;
+
+}
+}
+
+/* css for laptops */
+/* ============================================================================================================================ */
+
+@media only screen and (min-width: 769px) {
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+
+.paragraph-one{
+    float: left;
+    width: 45%;
+    text-align: justify;
+}
+
+.paragraph-two{
+    float: right;
+    width: 45%;
+    text-align: justify;
+}
+
+}
+
+/* ============================================================================================================================ */
+/* ---------------common code amongst media queries--------------- */
+/* ============================================================================================================================ */
+
+.nav-active{
+    /* transform: translateX(0%); */
+    visibility: visible;
+}
+
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+
+}
+/* responsiveness */
+
+@media(max-width:767px){
+    .hamburger-pic{
+        width:100%;
+        float: none;
+        clear: both;
+        margin: auto;
+    }
+    .hamburger-pic img{
+        width: 50%;
+    }
+    .best-seller-items .row {
+        display: block;
+    }
+
+    .menu-list-row{
+        display: block;
+    }
+    .menu-list-name, .menu-list-price{
+        display: block;
+        float: none;
+        text-align: right;
+    }
+
+    .aboutus-Buttons{
+        padding: 0px;
+        clear:both;
+        width: 75%;
+        margin: auto;
+    }
+    .aboutus-red-button{
+        width:100%;
+        margin: 15px 0px 15px 0px;
+    }
+    .aboutus-green-button{
+        width:100%;
+        margin-bottom: 15px;
+    }
+
+    .somosIbra-paragraph-two , .somosIbra-paragraph-three{
+        margin: 10px 0px 30px 0px;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list{
+        display: block;
+       
+    }
+
+    .client-one, .client-two, .client-three{
+        padding: 0px;
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .client-three{
+        margin-bottom: 30px;
+    }
+    .clients.about-us-clientscontainer{
+        margin: 0px auto;
+        width: 85%;
+        padding: 15px;
+        float: none;
+    }
+    .client-review-container{
+     background-size: cover;   
+    }
+
+}
