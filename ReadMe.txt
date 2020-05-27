@@ -1,24 +1,15 @@
-CSE 5335:WEB DATA MANAGEMENT
-
-PROJECT MADE BY : NITISH PRABHU KOTA ( 1001738851 )
-		  ABHISHEK JAIN ( 1001759977 )
+Author : NITISH PRABHU KOTA
 ===========================================================
 
 Admin Accounts:(Use these to login as admin)
 
-1) Usuario(Email): abhishekjain.10000@gmail.com
-	 Password: password
-
-2)  Usuario(Email): nitish.prabhu26@gmail.com
-	 Password: password
+Email: nitish.prabhu26@gmail.com
+Password: password
 
 User Accounts:(Use these to login as user)
 
-1) nitishprabhuk@gmail.com
-   password: password
-
-2) Usuario(Email): a@mavs.uta.edu
-   password: password
+Email: nitishprabhuk@gmail.com
+password: password
 
 ===========================================================
 
@@ -33,7 +24,6 @@ The Project contains the following Pages:
 7) Login    (INICIAR SESION)
 8) Cart    ( Cart symbol) ( Appears only after logging in)
 9) Logout(appears only after logging in)
-
 
 We have two user types:
 1) Admin - An admin account can be created only by providing details directly in the database and not through the application.
@@ -66,11 +56,6 @@ provided then only a single burger will be added to the list. Also the user can 
 Landing page for the user. on click of Menu buttons provided in this page, it will take the user to menu page
 Similarly, menu buttons provided in the About us page will exhibit the same behaviour.
 
-
-============================================================
-
-SMTP: A mail will be sent to the user on registration
-(Screenshot included in the folder named Screenshot in the root directory of the folder. filename: screenshot.png)
 ============================================================
 
 Validations for Login/Register/Contact forms:
